@@ -11,5 +11,5 @@
     src: local("Manrope"),url("./assets/fonts/Manrope/Manrope-VariableFont_wght.ttf");
 }
 body{
-    font-family: '';
+    font-family: 'Manrope';
 }
