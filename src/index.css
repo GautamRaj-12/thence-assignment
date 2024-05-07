@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "Grace";
+    src: local("Grace"),url("./assets/fonts/Covered_By_Your_Grace/CoveredByYourGrace-Regular.ttf");
+}
+@font-face {
+    font-family: "Manrope";
+    src: local("Manrope"),url("./assets/fonts/Manrope/Manrope-VariableFont_wght.ttf");
+}
+body{
+    font-family: '';
+}
