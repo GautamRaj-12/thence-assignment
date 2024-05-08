@@ -35,7 +35,7 @@ const Congratulations = () => {
           <h2 className="font-semibold text-[3.5rem] max-w-[40rem] text-center mx-auto text-[#1C1C1C] mt-4">
             Congratulations
           </h2>
-          <p className="text-[#727272] font-medium text-[1.6875rem] mt-5 text-center max-w-[40rem]">
+          <p className="text-[#727272] font-medium text-[1.6875rem] mt-5 text-center max-w-[44rem]">
             Your request has been successfully submitted to us. We will validate
             your information and reach out to you shortly with updates.
           </p>
