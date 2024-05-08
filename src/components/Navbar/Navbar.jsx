@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "../../assets/images/brunel-logo.svg";
 const Navbar = () => {
   return (
@@ -8,9 +9,12 @@ const Navbar = () => {
             <img src={logo} alt="Brunel Logo" className="my-8 mx-[3.25rem]" />
           </div>
           <div className="flex gap-4 mr-5">
-            <button className="text-lg font-medium border border-[#EAEAEA] rounded-full py-7 px-11">
+            <Link
+              to="/register"
+              className="text-lg font-medium border border-[#EAEAEA] rounded-full py-7 px-11"
+            >
               Get Projects
-            </button>
+            </Link>
             <button className="text-lg font-semibold bg-[#1C1C1C] text-white rounded-full py-7 px-11">
               Onboard Talent
             </button>
