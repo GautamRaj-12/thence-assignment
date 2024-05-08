@@ -17,7 +17,7 @@ const Hero = () => {
       {/* Bottom */}
       <div className="grid grid-cols-12 mt-28">
         {/* Left Column */}
-        <div className="col-span-7">
+        <div className="col-span-7 ml-64 w-[45rem]">
           <div className="relative">
             <img
               src={heroImage}
@@ -26,7 +26,7 @@ const Hero = () => {
             />
 
             {/* 40% Part */}
-            <div className="w-[16.75rem] h-[15rem] bg-white rounded-[2rem] absolute top-[7rem] left-[9rem]">
+            <div className="w-[16.75rem] h-[15rem] bg-white rounded-[2rem] absolute top-[7rem] -left-[2rem]">
               <p className="font-[Switzer] text-[4rem] font-medium mx-auto w-[13rem]">
                 40%
               </p>
@@ -37,7 +37,7 @@ const Hero = () => {
             </div>
 
             {/* Staff Deployment Part */}
-            <div className="w-[16.75rem] h-[5.5rem] bg-white rounded-full absolute bottom-[3rem] left-[13rem] flex items-center gap-[14px]">
+            <div className="w-[16.75rem] h-[5.5rem] bg-white rounded-full absolute bottom-[3rem] left-[2rem] flex items-center gap-[14px]">
               <div className="w-[3.25rem] h-[3.25rem] rounded-full bg-[#DDEFE0] flex justify-center items-center ml-4">
                 <img src={rocketIcon} alt="" className="w-8 h-8" />
               </div>
@@ -48,7 +48,7 @@ const Hero = () => {
             </div>
 
             {/* Client Expenses Part */}
-            <div className="w-[18.125rem] h-[15rem] bg-[#002E18] rounded-[2rem] absolute -bottom-[2.5rem] right-[13rem] flex flex-col justify-center items-center gap-[1.25rem]">
+            <div className="w-[18.125rem] h-[15rem] bg-[#002E18] rounded-[2rem] absolute -bottom-[3rem] right-[2rem] flex flex-col justify-center items-center gap-[1.25rem]">
               <div className="flex items-baseline gap-3 mx-auto w-[14rem]">
                 <p className="font-[Switzer] font-bold text-6xl text-white">
                   $0.5
