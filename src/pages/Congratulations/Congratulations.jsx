@@ -1,13 +1,23 @@
 import checkMark from "../../assets/images/check.svg";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import logo from "../../assets/images/brunel-logo.svg";
 
 const Congratulations = () => {
   const navigate = useNavigate();
+  const [countdown, setCountdown] = useState(5);
+
   useEffect(() => {
-    setTimeout(() => navigate("/"), 5000);
-  });
+    const timer = setTimeout(() => {
+      if (countdown > 1) {
+        setCountdown(countdown - 1);
+      } else {
+        navigate("/");
+      }
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, [countdown, navigate]);
 
   return (
     <>
@@ -20,18 +30,19 @@ const Congratulations = () => {
             <img src={checkMark} alt="" />
           </div>
           <h1 className="text-[#2DA950] font-[Grace] text-4xl text-center mt-10">
-            success submitted
+            Success Submitted
           </h1>
           <h2 className="font-semibold text-[3.5rem] w-[40rem] text-center mx-auto text-[#1C1C1C] mt-4">
             Congratulations
           </h2>
           <p className="text-[#727272] font-medium text-[1.6875rem] mt-5 text-center">
             Your request has been successfully submitted to us. We will validate
-            your information and reach out to your shortly with updates
+            your information and reach out to you shortly with updates.
           </p>
           <p className="mt-[9.75rem] text-center text-[#727272] text-xl">
-            Redirecting you to Homepage in{" "}
-            <span className="text-[#1C1C1C] font-bold">5 seconds</span>
+            Redirecting you to the homepage in{" "}
+            <span className="text-[#1C1C1C] font-bold">{countdown}</span>{" "}
+            seconds
           </p>
         </div>
       </section>

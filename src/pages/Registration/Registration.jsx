@@ -10,7 +10,7 @@ const Registration = () => {
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [error, setError] = useState("");
-  const [isFormValid, setIsFormValid] = useState(true);
+  const [isFormValid, setIsFormValid] = useState(false);
 
   const handleCloseClick = () => {
     navigate("/");
@@ -20,22 +20,34 @@ const Registration = () => {
   };
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
+    validateEmail(e.target.value);
+  };
+
+  const validateEmail = (input) => {
+    const emailRegex =
+      /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g;
+    if (!emailRegex.test(input.trim())) {
+      setError("Enter a valid email address");
+      setIsFormValid(false);
+    } else {
+      setError("");
+      setIsFormValid(true);
+    }
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const emailRegex =
-      /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g;
+    validateEmail(email);
     if (fullName.trim() === "") {
       setError("Please enter a name");
+      setIsFormValid(false);
       return;
     }
-    if (!emailRegex.test(email.trim())) {
-      setError("Enter a valid email address");
-      return;
+    if (isFormValid) {
+      e.target.submit();
     }
-    e.target.submit();
   };
+
   return (
     <>
       <div className="flex items-center justify-between my-8 mx-[3.25rem]">
@@ -84,7 +96,7 @@ const Registration = () => {
             <button
               className="w-[26rem] bg-[#1C1C1C] py-6 text-white rounded-full font-semibold text-lg mt-12 disabled:bg-[#C9C9C9]"
               type="submit"
-              disabled={isFormValid}
+              disabled={!isFormValid}
             >
               Submit
             </button>
