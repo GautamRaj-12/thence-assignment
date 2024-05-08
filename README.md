@@ -4,6 +4,10 @@
 
 - This repository contains the codebase for a Figma assignment provided by Thence.co. The assignment involves translating design specifications from Figma into a functional web application.
 
+## Working demo of the app
+
+[Thence Assignment](https://thence-assignment-gautam.vercel.app/)
+
 ## My work overview
 
 - **Pixel-Perfect Implementation**: I have followed the design typography, spacing and styles and implemented them correctly in my code. I have used **_tailwindcss_** for styling
