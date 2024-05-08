@@ -1,6 +1,7 @@
 import checkMark from "../../assets/images/check.svg";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import logo from "../../assets/images/brunel-logo.svg";
 
 const Congratulations = () => {
   const navigate = useNavigate();
@@ -10,6 +11,9 @@ const Congratulations = () => {
 
   return (
     <>
+      <div>
+        <img src={logo} alt="Brunel Logo" className="my-8 mx-[3.25rem]" />
+      </div>
       <section className="flex flex-col items-center justify-center mt-40">
         <div className="w-[45rem]">
           <div className="flex justify-center">
