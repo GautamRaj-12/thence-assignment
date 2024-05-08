@@ -10,6 +10,10 @@
     font-family: "Manrope";
     src: local("Manrope"),url("./assets/fonts/Manrope/Manrope-VariableFont_wght.ttf");
 }
+@font-face {
+    font-family: "Switzer";
+    src: local("Switzer"),url("./assets/fonts/switzer/Switzer-Regular.ttf");
+}
 body{
     font-family: 'Manrope';
 }
