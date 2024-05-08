@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <>
       <header>
-        <nav className="m-6 flex justify-between items-center border border-[#EAEAEA] rounded-full">
+        <nav className="m-6 flex flex-wrap justify-between items-center border border-[#EAEAEA] rounded-full">
           <div>
             <img src={logo} alt="Brunel Logo" className="my-8 mx-[3.25rem]" />
           </div>

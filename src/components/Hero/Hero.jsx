@@ -9,15 +9,15 @@ const Hero = () => {
         <h1 className="text-[#2DA950] font-[Grace] text-4xl text-center">
           success stories
         </h1>
-        <h2 className="font-semibold text-[3.5rem] w-[40rem] text-center mx-auto text-[#1C1C1C] mt-4">
+        <h2 className="font-semibold md:text-[3.5rem] text-[2.5rem] max-w-[40rem] text-center mx-auto text-[#1C1C1C] mt-4">
           Every success journey we&apos;ve encountered.
         </h2>
       </div>
 
       {/* Bottom */}
-      <div className="grid grid-cols-12 mt-28">
+      <div className="flex mt-28 flex-wrap">
         {/* Left Column */}
-        <div className="col-span-7 ml-64 w-[45rem]">
+        <div className="md:ml-64 ml-20 w-[45rem]">
           <div className="relative">
             <img
               src={heroImage}
@@ -64,7 +64,7 @@ const Hero = () => {
           </div>
         </div>
         {/* Right Column */}
-        <div className="col-span-5">
+        <div className="">
           <p className="text-[2.5rem] font-semibold max-w-[24.875rem] text-[#1C1C1C]">
             Enhance fortune 50 company’s insights teams research capabilities
           </p>
