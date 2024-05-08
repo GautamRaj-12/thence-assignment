@@ -1,8 +1,18 @@
-# React + Vite
+# Thence Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+- This repository contains the codebase for a Figma assignment provided by Thence.co. The assignment involves translating design specifications from Figma into a functional web application.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## My work overview
+
+- **Pixel-Perfect Implementation**: I have followed the design typography, spacing and styles and implemented them correctly in my code. I have used **_tailwindcss_** for styling
+- **React JS Best Practices**: I have followed react js best practices including consistent coding style and conventions, proper use of React hooks, effective state management, and adherence to navigation best practices.
+- **Responsive**: Even though, this wasn't mentioned, I have made the design responsive so that It can be viewed from any kind of device and will look perfect.
+
+## Instructions to run it locally
+
+- **Clone the repo**: `git clone https://github.com/GautamRaj-12/thence-assignment.git`
+- **Navigate to project directory**: `cd thence-assignment`
+- **Install dependecies**: `npm install`
+- **Start the development server**: `npm run dev`
