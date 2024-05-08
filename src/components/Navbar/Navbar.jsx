@@ -11,11 +11,11 @@ const Navbar = () => {
           <div className="flex gap-4 mr-5">
             <Link
               to="/register"
-              className="text-lg font-medium border border-[#EAEAEA] rounded-full py-7 px-11"
+              className="text-lg font-medium border border-[#EAEAEA] rounded-full py-7 px-11 hover:bg-[#F1F1F1] transition-all duration-300"
             >
               Get Projects
             </Link>
-            <button className="text-lg font-semibold bg-[#1C1C1C] text-white rounded-full py-7 px-11">
+            <button className="text-lg font-semibold bg-[#1C1C1C] text-white rounded-full py-7 px-11 hover:bg-[#4E4E4E] transition-all duration-300">
               Onboard Talent
             </button>
           </div>

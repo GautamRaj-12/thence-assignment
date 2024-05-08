@@ -73,7 +73,7 @@ const Hero = () => {
             <span className="w-3 h-3 bg-[#E4E3E3] rounded-full inline-block"></span>
             <span className="w-3 h-3 bg-[#E4E3E3] rounded-full inline-block"></span>
           </div>
-          <button className="bg-[#1C1C1C] text-white px-10 py-8 rounded-full flex items-center font-semibold text-xl gap-4 mt-32">
+          <button className="bg-[#1C1C1C] text-white px-10 py-8 rounded-full flex items-center font-semibold text-xl gap-4 mt-32 hover:bg-[#4E4E4E] transition-all duration-300">
             <span>Explore More </span>
             <img src={rightArrow} alt="" />
           </button>
