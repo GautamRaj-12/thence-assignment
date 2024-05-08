@@ -64,7 +64,7 @@ const Registration = () => {
           <h1 className="text-[#2DA950] font-[Grace] text-4xl text-center">
             Registration Form
           </h1>
-          <h2 className="font-semibold text-[3.5rem] w-[40rem] text-center mx-auto text-[#1C1C1C] mt-4">
+          <h2 className="font-semibold md:text-[3.5rem] text-[2rem] max-w-[40rem] text-center mx-auto text-[#1C1C1C] mt-4">
             Start your success Journey here!
           </h2>
 
