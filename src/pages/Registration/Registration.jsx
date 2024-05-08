@@ -1,12 +1,20 @@
 import { useState } from "react";
 import errorBadge from "../../assets/images/Badges.svg";
+import logo from "../../assets/images/brunel-logo.svg";
+import closeIcon from "../../assets/images/Close.svg";
+import { useNavigate } from "react-router-dom";
 
 const Registration = () => {
+  const navigate = useNavigate();
+
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [error, setError] = useState("");
-  const [isFormValid, setIsFormValid] = useState(false);
+  const [isFormValid, setIsFormValid] = useState(true);
 
+  const handleCloseClick = () => {
+    navigate("/");
+  };
   const handleNameChange = (e) => {
     setFullName(e.target.value);
   };
@@ -18,10 +26,10 @@ const Registration = () => {
     e.preventDefault();
     const emailRegex =
       /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g;
-    // if (fullName.trim() === "") {
-    //   setError("Please enter a name");
-    //   return;
-    // }
+    if (fullName.trim() === "") {
+      setError("Please enter a name");
+      return;
+    }
     if (!emailRegex.test(email.trim())) {
       setError("Enter a valid email address");
       return;
@@ -30,7 +38,16 @@ const Registration = () => {
   };
   return (
     <>
-      <section>
+      <div className="flex items-center justify-between my-8 mx-[3.25rem]">
+        <img src={logo} alt="Brunel Logo" />
+        <span
+          className="w-16 h-16 rounded-full border border-[#CACACA] flex justify-center items-center cursor-pointer"
+          onClick={handleCloseClick}
+        >
+          <img src={closeIcon} alt="A close icon to go back to home page" />
+        </span>
+      </div>
+      <section className="mt-16">
         <div className="flex flex-col justify-center items-center">
           <h1 className="text-[#2DA950] font-[Grace] text-4xl text-center">
             Registration Form
