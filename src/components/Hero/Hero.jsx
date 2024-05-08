@@ -1,6 +1,7 @@
 import heroImage from "../../assets/images/hero-image.png";
 import rightArrow from "../../assets/images/right-arrow.png";
 import rocketIcon from "../../assets/images/rocket.svg";
+import sparkleIcon from "../../assets/images/sparkle.svg";
 const Hero = () => {
   return (
     <section className="ml-16 mt-[5.25rem]">
@@ -27,7 +28,12 @@ const Hero = () => {
 
             {/* 40% Part */}
             <div className="w-[16.75rem] h-[15rem] bg-white rounded-[2rem] absolute top-[7rem] -left-[2rem]">
-              <p className="font-[Switzer] text-[4rem] font-medium mx-auto w-[13rem]">
+              <img
+                src={sparkleIcon}
+                alt="Sparkling icon"
+                className="absolute -top-8"
+              />
+              <p className="font-[Switzer] text-[4rem] font-medium mx-auto w-[13rem] py-2">
                 40%
               </p>
               <p className="w-[13rem] text-lg font-medium text-[#828282] mx-auto">
