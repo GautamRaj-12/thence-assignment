@@ -13,11 +13,32 @@ const Hero = () => {
       </div>
       <div className="grid grid-cols-12 mt-28">
         <div className="col-span-7">
-          <img
-            src={heroImage}
-            alt="A girl looking excited"
-            className="mx-auto rounded-[2rem]"
-          />
+          <div className="relative">
+            <img
+              src={heroImage}
+              alt="A girl looking excited"
+              className="mx-auto rounded-[2rem]"
+            />
+            <div className="w-[16.75rem] h-[15rem] bg-white rounded-[2rem] absolute top-[7rem] left-[9rem]">
+              <p>40%</p>
+              <p>
+                Achieved reduction in project execution time by optimising team
+                availability
+              </p>
+            </div>
+            <div className="w-[16.75rem] h-[5.5rem] bg-white rounded-full absolute bottom-[3rem] left-[13rem]">
+              <p>10 DAYS</p>
+              <p>Staff Deployment</p>
+            </div>
+            <div className="w-[18.125rem] h-[15rem] bg-[#002E18] rounded-[2rem] absolute -bottom-[2.5rem] right-[13rem]">
+              <p>
+                $0.5 <span>Million </span>
+              </p>
+              <p>
+                Reduced client expenses by saving on hiring and employee costs.
+              </p>
+            </div>
+          </div>
         </div>
         <div className="col-span-5">
           <p className="text-[2.5rem] font-semibold max-w-[24.875rem] text-[#1C1C1C]">
