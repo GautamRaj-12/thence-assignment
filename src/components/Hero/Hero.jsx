@@ -15,9 +15,9 @@ const Hero = () => {
       </div>
 
       {/* Bottom */}
-      <div className="flex mt-28 flex-wrap">
+      <div className="grid grid-cols-12 mt-28 flex-wrap">
         {/* Left Column */}
-        <div className="md:ml-64 ml-20 w-[45rem]">
+        <div className="col-span-7 md:ml-64 ml-20 w-[45rem]">
           <div className="relative">
             <img
               src={heroImage}
@@ -64,7 +64,7 @@ const Hero = () => {
           </div>
         </div>
         {/* Right Column */}
-        <div className="">
+        <div className="col-span-5 mt-12">
           <p className="text-[2.5rem] font-semibold max-w-[24.875rem] text-[#1C1C1C]">
             Enhance fortune 50 company’s insights teams research capabilities
           </p>
