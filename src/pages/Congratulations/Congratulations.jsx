@@ -1,5 +1,13 @@
 import checkMark from "../../assets/images/check.svg";
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+
 const Congratulations = () => {
+  const navigate = useNavigate();
+  useEffect(() => {
+    setTimeout(() => navigate("/"), 5000);
+  });
+
   return (
     <>
       <section className="flex flex-col items-center justify-center mt-40">
