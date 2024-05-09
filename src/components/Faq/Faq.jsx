@@ -14,7 +14,11 @@ const Faq = () => {
         <div className="mt-[8.5rem] lg:mx-0 mx-auto md:w-auto w-[90%]">
           <Accordion />
         </div>
-        <img src={Union} alt="" className="absolute bottom-[-60px]" />
+        <img
+          src={Union}
+          alt=""
+          className="absolute bottom-[-60px] pointer-events-none"
+        />
       </section>
     </>
   );
