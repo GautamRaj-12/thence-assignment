@@ -12,7 +12,7 @@ const Navbar = () => {
               className="my-8 sm:mx-[3.25rem] mx-auto"
             />
           </div>
-          <div className="flex gap-4 mr-5 md:mb-0 mb-2 md:ml-0 ml-2">
+          <div className="flex flex-wrap justify-center gap-4 mr-5 md:mb-0 mb-2 md:ml-0 ml-2">
             <Link
               to="/register"
               className="text-lg font-medium border border-[#EAEAEA] rounded-full sm:py-7 py-3 sm:px-11 px-6 hover:bg-[#F1F1F1] transition-all duration-300"
